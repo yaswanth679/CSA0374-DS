@@ -51,3 +51,44 @@ scanf("%d",&b[i][j]);
 printf("multiply of the matrix=\n");
 
 for(i=0;i<r;i++)
+{
+
+for(j=0;j<c;j++)
+
+{
+
+mul[i][j]=0;
+
+for(k=0;k<c;k++)
+
+{
+
+mul[i][j]+=a[i][k]*b[k][j];
+
+}
+
+}
+
+}
+
+//for printing result
+
+for(i=0;i<r;i++)
+
+{
+
+for(j=0;j<c;j++)
+
+{
+
+printf("%d\t",mul[i][j]);
+
+}
+
+printf("\n");
+
+}
+
+return 0;
+
+}
